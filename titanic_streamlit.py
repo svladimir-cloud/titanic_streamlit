@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 def start_app(df, analize_func):
     st.title("Анализ стоимости билетов пассажиров Титаника")
 
@@ -12,5 +13,6 @@ def start_app(df, analize_func):
     fare_summary = analize_func(df, selected_sex)
 
     # Отображение результата в таблице
-    st.subheader(f"Суммарная стоимость билетов для пассажиров пола '{selected_sex.capitalize()}' по классам:")
+    st.subheader(f"Суммарная стоимость билетов для\
+                 пассажиров пола '{selected_sex.capitalize()}' по классам:")
     st.dataframe(fare_summary)
