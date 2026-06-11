@@ -20,3 +20,5 @@ def start_app(df, analize_func, analize_func_survival):
     survival_summary = analize_func_survival(df, selected_sex)
     st.subheader(f"Процент выживших для '{selected_sex.capitalize()}' по классам:")
     st.dataframe(survival_summary)
+
+    print("OK Streamlit started")
